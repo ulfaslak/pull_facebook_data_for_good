@@ -20,16 +20,16 @@ def get_file_dates(earliest_date):
         
     # need to add %200000' with proper time value at 3rd position to end of url
         
-    return(data_dates)
+    return data_dates
 
 def get_url_end(date):
-    return('%20' + '{0:02d}'.format(date.hour) + '00') #'{:<03d}'
+    return '%20' + '{0:02d}'.format(date.hour) + '00' #'{:<03d}'
 
 def combine_url(date, url):
     
-    return(url + str(date).split(' ')[0] + get_url_end(date))
+    return url + str(date).split(' ')[0] + get_url_end(date)
 
 def get_urls(base_url, data_dates):
     
-    return(list(map(lambda x:combine_url(x, base_url), data_dates)))
+    return list(map(lambda x: combine_url(x, base_url), data_dates))
 

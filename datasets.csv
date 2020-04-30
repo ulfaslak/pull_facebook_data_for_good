@@ -1,0 +1,5 @@
+﻿country,type,id,start_date,addr
+Denmark,movement_admin,215895176143314,2020-03-28,downloads/vector
+Denmark,movement_tile,247725979953493,2020-03-28,downloads/vector
+Denmark,population_admin,518481648841284,2020-03-28,downloads/vector
+Denmark,population_tile,1539619432872237,2020-03-28,downloads/raster
